@@ -18,6 +18,9 @@
 		7C073FCC1DA04ADD00245744 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FCB1DA04ADD00245744 /* IntroViewController.swift */; };
 		7C073FCE1DA0510600245744 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FCD1DA0510600245744 /* LoginViewController.swift */; };
 		7C073FD01DA2C6FA00245744 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FCF1DA2C6FA00245744 /* TutorialViewController.swift */; };
+		7C214FAE1DA366F400C7A61B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C214FAD1DA366F400C7A61B /* SettingsViewController.swift */; };
+		7C214FB01DA3674800C7A61B /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C214FAF1DA3674800C7A61B /* ConversationsViewController.swift */; };
+		7C214FB21DA3691100C7A61B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C214FB11DA3691100C7A61B /* TimelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		7C073FCB1DA04ADD00245744 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7C073FCD1DA0510600245744 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C073FCF1DA2C6FA00245744 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		7C214FAD1DA366F400C7A61B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7C214FAF1DA3674800C7A61B /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		7C214FB11DA3691100C7A61B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +114,13 @@
 				7C073F9B1DA0475300245744 /* AppDelegate.swift */,
 				7C073F9D1DA0475300245744 /* ViewController.swift */,
 				7C073F9F1DA0475300245744 /* Main.storyboard */,
+				7C214FAF1DA3674800C7A61B /* ConversationsViewController.swift */,
+				7C214FAD1DA366F400C7A61B /* SettingsViewController.swift */,
 				7C073FCF1DA2C6FA00245744 /* TutorialViewController.swift */,
 				7C073FCD1DA0510600245744 /* LoginViewController.swift */,
 				7C073FCB1DA04ADD00245744 /* IntroViewController.swift */,
 				7C073FA21DA0475300245744 /* Assets.xcassets */,
+				7C214FB11DA3691100C7A61B /* TimelineViewController.swift */,
 				7C073FA41DA0475300245744 /* LaunchScreen.storyboard */,
 				7C073FA71DA0475300245744 /* Info.plist */,
 				7C073FC91DA04A4A00245744 /* Common.swift */,
@@ -273,7 +282,10 @@
 			files = (
 				7C073F9E1DA0475300245744 /* ViewController.swift in Sources */,
 				7C073FCA1DA04A4A00245744 /* Common.swift in Sources */,
+				7C214FAE1DA366F400C7A61B /* SettingsViewController.swift in Sources */,
+				7C214FB01DA3674800C7A61B /* ConversationsViewController.swift in Sources */,
 				7C073F9C1DA0475300245744 /* AppDelegate.swift in Sources */,
+				7C214FB21DA3691100C7A61B /* TimelineViewController.swift in Sources */,
 				7C073FCE1DA0510600245744 /* LoginViewController.swift in Sources */,
 				7C073FD01DA2C6FA00245744 /* TutorialViewController.swift in Sources */,
 				7C073FCC1DA04ADD00245744 /* IntroViewController.swift in Sources */,
