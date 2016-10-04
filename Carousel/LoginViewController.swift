@@ -12,6 +12,10 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var loginButtonParentView: UIView!
+    @IBOutlet weak var buttonSignIn: UIButton!
+    @IBOutlet weak var indicatorSignIn: UIActivityIndicatorView!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     var initialLoginButtonY: CGFloat!
     var offsetLoginButton: CGFloat!
@@ -21,14 +25,15 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
 
         // Do any additional setup after loading the view.
         
-        loginScrollView.delegate = self
-        self.loginScrollView.contentInset.bottom = 120
+        self.loginScrollView.delegate = self
+        loginScrollView.contentSize = loginScrollView.frame.size
         initialLoginButtonY = loginButtonParentView.frame.origin.y
-        offsetLoginButton = -120
+        offsetLoginButton = -130
         
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
             // Any code you put in here will be called when the keyboard is about to display
 
+            self.loginScrollView.contentInset.bottom = 120
             self.loginButtonParentView.frame.origin.y = self.initialLoginButtonY + self.offsetLoginButton
             self.loginScrollView.contentOffset.y = self.loginScrollView.contentInset.bottom
         }
@@ -43,21 +48,46 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }    
+    }
 
-    @IBAction func didTap(_ sender: AnyObject) {
+    @IBAction func didPressBack(_ sender: AnyObject) {
+        navigationController!.popViewController(animated: true)
+    }
+
+    @IBAction func didTapLogin(_ sender: AnyObject) {
         view.endEditing(true)
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func run(after wait: TimeInterval, closure: @escaping () -> Void) {
+        let queue = DispatchQueue.main
+        queue.asyncAfter(deadline: DispatchTime.now() + wait, execute: closure)
     }
-    */
-
+    
+    @IBAction func didPressSignIn(_ sender: AnyObject) {
+        if self.emailField.text!.isEmpty || self.passwordField.text!.isEmpty {
+            let alertController = UIAlertController(title: "Email & Password Required", message: "Please enter your information.", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                }
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true) {
+            }
+        } else {
+            
+            self.indicatorSignIn.startAnimating()
+            
+            let secondsToDelay = 2.0
+            run(after: secondsToDelay) {
+                if self.emailField.text == "parker" && self.passwordField.text == "pass" {
+                    self.performSegue(withIdentifier: "pushSignIn", sender: nil)
+                } else {
+                    let alertController = UIAlertController(title: "Invalid Email or Password", message: "Please enter a valid Email and Password", preferredStyle: .alert)
+                    let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                    }
+                    alertController.addAction(OKAction)
+                    self.present(alertController, animated: true) {
+                    }
+                }
+            }
+        }
+    }
 }

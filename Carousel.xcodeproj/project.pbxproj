@@ -17,6 +17,7 @@
 		7C073FCA1DA04A4A00245744 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FC91DA04A4A00245744 /* Common.swift */; };
 		7C073FCC1DA04ADD00245744 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FCB1DA04ADD00245744 /* IntroViewController.swift */; };
 		7C073FCE1DA0510600245744 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FCD1DA0510600245744 /* LoginViewController.swift */; };
+		7C073FD01DA2C6FA00245744 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C073FCF1DA2C6FA00245744 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7C073FC91DA04A4A00245744 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		7C073FCB1DA04ADD00245744 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7C073FCD1DA0510600245744 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C073FCF1DA2C6FA00245744 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7C073F9B1DA0475300245744 /* AppDelegate.swift */,
 				7C073F9D1DA0475300245744 /* ViewController.swift */,
 				7C073F9F1DA0475300245744 /* Main.storyboard */,
+				7C073FCF1DA2C6FA00245744 /* TutorialViewController.swift */,
 				7C073FCD1DA0510600245744 /* LoginViewController.swift */,
 				7C073FCB1DA04ADD00245744 /* IntroViewController.swift */,
 				7C073FA21DA0475300245744 /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				7C073FCA1DA04A4A00245744 /* Common.swift in Sources */,
 				7C073F9C1DA0475300245744 /* AppDelegate.swift in Sources */,
 				7C073FCE1DA0510600245744 /* LoginViewController.swift in Sources */,
+				7C073FD01DA2C6FA00245744 /* TutorialViewController.swift in Sources */,
 				7C073FCC1DA04ADD00245744 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
